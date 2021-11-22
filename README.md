@@ -35,16 +35,10 @@ Once you have created the database, you can run the server and client and submit
 
 ### Prerequisites
 
-What do I need to install before I can run your project
-
-### Installation
-
-How do I get your project running?
-
-## Usage
-
-How do I use your project
-
+Express
+Node
+Material-UI
+Redux
 
 ## License
 
