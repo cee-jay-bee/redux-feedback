@@ -59,7 +59,7 @@ function Review ( props ) {
             </DialogContent>
             <DialogActions>
                 <Button onClick={disagree}>Disagree</Button>
-                <Button onClick={postFeedback} autoFocus><Link to="/">Agree</Link></Button>
+                <Button onClick={postFeedback} autoFocus><Link to="/thanks">Agree</Link></Button>
             </DialogActions>
             </Dialog>
         </div>

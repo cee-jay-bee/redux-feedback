@@ -13,6 +13,7 @@ import Understanding from '../Understanding/Understanding';
 import Support from '../Support/Support';
 import Comments from '../Comments/Comments';
 import Review from '../Review/Review';
+import Thanks from '../Thanks/Thanks';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
           <Route path='/support' element={<Support/>}></Route>
           <Route path='/comments' element={<Comments/>}></Route>
           <Route path='/review' element={<Review/>}></Route>
+          <Route path='/thanks' element={<Thanks/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
