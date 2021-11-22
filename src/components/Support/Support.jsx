@@ -21,6 +21,12 @@ function Support ( props ) {
         })
     }
 
+    const removeUnderstanding = event => {
+        dispatch({
+            type: 'REMOVE_DATA'
+        })
+    }
+
 
     
     return(
@@ -33,6 +39,8 @@ function Support ( props ) {
                 <MenuItem value={4}>4</MenuItem>
                 <MenuItem value={5}>5</MenuItem>
             </Select>
+            <Button onClick={removeUnderstanding}>
+            <Link to="/understanding">PREVIOUS</Link></Button>
             <Button onClick={addSupport}>
             <Link to="/comments">NEXT</Link></Button>
     

@@ -21,6 +21,12 @@ function Understanding ( props ) {
         })
     }
 
+    const removeFeeling = event => {
+        dispatch({
+            type: 'REMOVE_DATA'
+        })
+    }
+
 
     
     return(
@@ -33,6 +39,8 @@ function Understanding ( props ) {
                 <MenuItem value={4}>4</MenuItem>
                 <MenuItem value={5}>5</MenuItem>
             </Select>
+            <Button onClick={removeFeeling}>
+            <Link to="/">PREVIOUS</Link></Button>
             <Button onClick={addUnderstanding}>
             <Link to="/support">NEXT</Link></Button>
     

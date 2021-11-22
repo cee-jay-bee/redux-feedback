@@ -20,6 +20,11 @@ function Comments ( props ) {
             payload: comments
         })
     }
+    const removeSupport = event => {
+        dispatch({
+            type: 'REMOVE_DATA'
+        })
+    }
 
 
     
@@ -34,6 +39,8 @@ function Comments ( props ) {
                     InputLabelProps={{ shrink: true }}
                     onChange={ (event ) =>handleChange ( event )}
                 />
+            <Button onClick={removeSupport}>
+            <Link to="/support">PREVIOUS</Link></Button>
             <Button onClick={addComments}>
             <Link to="/review">NEXT</Link></Button>
     

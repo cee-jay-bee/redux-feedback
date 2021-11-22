@@ -33,6 +33,12 @@ function Review ( props ) {
       setOpen(false);
       //this closes it again if the user clicks "disagree"
     };
+
+    const removeComments = () => {
+        dispatch({
+            type: 'REMOVE_DATA'
+        })
+    }
     
 
     return(
@@ -42,6 +48,9 @@ function Review ( props ) {
             <p>Understanding: {data[1]}</p>
             <p>Support: {data[2]}</p>
             <p>Comments: {data[3]}</p>
+            <Button onClick={removeComments}>
+            <Link to="/comments">PREVIOUS</Link></Button>
+            <br />
             <Button variant="contained" color="primary" size="large" style={{fontSize: 24}} onClick={openDialog}>Submit</Button>
 
             <Dialog

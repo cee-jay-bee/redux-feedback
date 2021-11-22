@@ -15,6 +15,9 @@ const data = (state = [], action) => {
     if (action.type === 'EMPTY'){
         return [];
     }
+    if (action.type === 'REMOVE_DATA'){
+      return state.slice(0, -1);
+    }
     return state;
 }
   
